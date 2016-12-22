@@ -1,0 +1,2 @@
+<canvas canvas-id="firstCanvas"/>
+<canvas canvas-id="secondCanvas" style="width: 20rem;height: 20rem;"/>
