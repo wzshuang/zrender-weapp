@@ -14,4 +14,4 @@ var zr1 = zrender.init(firstCanvas);
 zr1.add(circle);
 ```
 ##示例：
-![示例：](https://cloud.githubusercontent.com/assets/8585771/21432041/b4f672be-c8a4-11e6-90c8-5cc604c207bf.png)
+![示例](https://cloud.githubusercontent.com/assets/8585771/21485252/55d784f0-cbdb-11e6-8417-2cc830fc327a.png)
