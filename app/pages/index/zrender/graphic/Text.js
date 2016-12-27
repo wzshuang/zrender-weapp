@@ -90,7 +90,6 @@ module.exports = (function () {
                 var textLines = text.split('\n');
                 for (var i = 0; i < textLines.length; i++) {
                     if(style.hasFill()) {
-                        ctx.setFillStyle(style.fill);
                         ctx.fillText(textLines[i], x, y);
                     }
                     style.hasStroke() && ctx.strokeText(textLines[i], x, y);

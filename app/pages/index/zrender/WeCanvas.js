@@ -6,9 +6,12 @@ function WeCanvas(id) {
         context: null,
         getContext: function () {
             if (!this.context) {
-                var ctx = wx.createCanvasContext();
+                var ctx = wx.createCanvasContext(this.id);
                 ctx.id = this.id;
-                ctx.setTransform = function () { } // 微信暂不支持。定义个空方法防止代码报错
+                if (!ctx.setTransform) {
+                    ctx.setTransform = function () { } // 微信暂不支持。定义个空方法防止代码报错
+                }
+
                 ctx.measureText = {
                     width: 18
                 } // 微信暂不支持

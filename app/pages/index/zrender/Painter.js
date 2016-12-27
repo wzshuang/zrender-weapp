@@ -581,11 +581,11 @@
                 el.brush(ctx, scope.prevEl || null);
                 scope.prevEl = el;
 
-                wx.drawCanvas({
-                    canvasId: ctx.id,
-                    actions: ctx.actions
-                })
-                //ctx.draw();
+                // wx.drawCanvas({
+                //     canvasId: ctx.id,
+                //     actions: ctx.actions
+                // })
+                ctx.draw();
                 el.afterBrush && el.afterBrush(ctx);
             }
         },

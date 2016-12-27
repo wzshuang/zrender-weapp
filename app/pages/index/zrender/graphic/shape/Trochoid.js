@@ -21,7 +21,7 @@ module.exports = (function () {
         },
 
         style: {
-            stroke: '#000',
+            stroke: '#000000',
 
             fill: null
         },

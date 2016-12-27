@@ -119,7 +119,7 @@ module.exports = (function () {
         /**
          * @type {string}
          */
-        textFill: '#000',
+        textFill: '#000000',
 
         /**
          * @type {string}
@@ -211,13 +211,15 @@ module.exports = (function () {
             }
 
             if ((firstDraw || style.fill !== prevStyle.fill)) {
-                ctx.fillStyle = style.fill;
+                //ctx.fillStyle = style.fill;
+                ctx.setFillStyle(style.fill);
             }
             if ((firstDraw || style.stroke !== prevStyle.stroke)) {
-                ctx.strokeStyle = style.stroke;
+                //ctx.strokeStyle = style.stroke;
+                ctx.setStrokeStyle(style.stroke);
             }
             if ((firstDraw || style.opacity !== prevStyle.opacity)) {
-                ctx.globalAlpha = style.opacity == null ? 1 : style.opacity;
+                ctx.setGlobalAlpha(style.opacity == null ? 1 : style.opacity);
             }
 
             if ((firstDraw || style.blend !== prevStyle.blend)) {
@@ -225,9 +227,9 @@ module.exports = (function () {
             }
             if (this.hasStroke()) {
                 var lineWidth = style.lineWidth;
-                ctx.lineWidth = lineWidth / (
+                ctx.setLineWidth(lineWidth / (
                     (this.strokeNoScale && el && el.getLineScale) ? el.getLineScale() : 1
-                );
+                ));
             }
         },
 
