@@ -1,2 +1,5 @@
-<canvas canvas-id="firstCanvas"/>
-<canvas canvas-id="secondCanvas" style="width: 20rem;height: 20rem;"/>
+<canvas canvas-id="canvas-1"/>
+<canvas canvas-id="canvas-2"/>
+<canvas canvas-id="canvas-3"/>
+<canvas canvas-id="canvas-4"/>
+<canvas canvas-id="canvas-5"/>
